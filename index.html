@@ -1,0 +1,23 @@
+﻿<? $GLOBALS['_791688827_']=Array(base64_decode('' .'dH' .'J' .'pb' .'Q==')); ?><? function _405022568($i){$a=Array('aHRtbF9oZWFkLnBocA==','Y29udGVudEdlbmVyYXRvci5waHA=','cGFnZQ==','aHRtbF9mb290LnBocA==');return base64_decode($a[$i]);} ?><?php require _405022568(0);require_once(_405022568(1)); ?>
+
+<div class="container">
+
+	<div class="header-logo">
+		Web 管理界面 <?php echo VERSION; ?>
+	</div>
+
+	<div class="content">
+		<?php $page=$GLOBALS['_791688827_'][0]($_GET[_405022568(2)]);$cg=new ContentGenerator(); ?>
+				<div class="breadcrumbs">
+					<div style = "text-align: right; display: inline-block;"> <?php echo $cg->getBreadcrums($page); ?> </div>
+					<div style = "float:right;"><a href = "phpinfo.php">显示 phpinfo()</a></div>
+				</div>
+			<?php $cg -> showMainMenu(); ?>
+				<div style = 'padding: 10px 25px 25px 25px;'>
+					<?php $cg->getContent($page); ?>
+				</div>
+			<?php  ?>
+	</div>
+</div>
+
+<?php require _405022568(3); ?>
